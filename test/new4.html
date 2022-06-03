@@ -1,0 +1,17 @@
+<html>
+<form name="fname">
+ <input type="text" value="sushan niroula" name="name" readonly="readonly">
+<input type="button" value="check" onclick="edit()">
+</form>
+<script type="text/javascript">
+function edit(){
+document.fname.name.removeAttribute('readonly');
+document.fname.name.focus();
+}
+document.fname.name.onblur=function(){
+alert("done");
+document.fname.name.addAttribute('readonly');
+};
+</script>
+
+  </html>
